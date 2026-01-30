@@ -1,20 +1,20 @@
 package tech.buildrun;
 
 public class Caneta {
-    String cor;
-    String marca;
-    double ponta;
-    int carga;
+    public String cor;
+    public String marca;
+    public double ponta;
+    public int carga;
     boolean tampada;
 
-    void tampar() {
+    public void tampar() {
         this.tampada = true;
 
     }
-    void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
-    void escrever(String texto) {
+    public void escrever(String texto) {
         System.out.print("Escrevendo: "+texto);
     }
 }
