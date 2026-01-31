@@ -17,9 +17,20 @@ public class MainMetodo {
         canetaVermelha.marca = "Faber Castell";
         canetaVermelha.tampada = false;
 
-       canetaAzul.escrever("Olá da caneta azul!");
-        System.out.println();
-       canetaVermelha.escrever("Olá da caneta vermelha!");
+       // Tampando a caneta
+        canetaAzul.tampar();
+
+        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor+" tampada: "+canetaAzul.tampada);
+
+        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor+" tampada: "+canetaVermelha.tampada);
+
+        System.out.println("-------------------------------");
+        canetaAzul.destampar();
+        canetaVermelha.tampar();
+
+        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor+" tampada: "+canetaAzul.tampada);
+
+        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor+" tampada: "+canetaVermelha.tampada);
 
     }
 }
