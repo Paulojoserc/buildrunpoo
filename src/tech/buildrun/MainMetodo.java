@@ -5,7 +5,7 @@ public class MainMetodo {
 
         Caneta canetaAzul = new Caneta();
         canetaAzul.cor =  "Azul";
-        canetaAzul.tampada = false;
+      //  canetaAzul.tampada = false;
         canetaAzul.ponta = 0.5;
         canetaAzul.carga = 100;
         canetaAzul.marca = "Bic";
@@ -15,22 +15,22 @@ public class MainMetodo {
         canetaVermelha.ponta = 0.1;
         canetaVermelha.carga = 50;
         canetaVermelha.marca = "Faber Castell";
-        canetaVermelha.tampada = false;
+       // canetaVermelha.tampada = false;
 
        // Tampando a caneta
         canetaAzul.tampar();
 
-        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor+" tampada: "+canetaAzul.tampada);
+        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor);
 
-        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor+" tampada: "+canetaVermelha.tampada);
+        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor);
 
         System.out.println("-------------------------------");
         canetaAzul.destampar();
         canetaVermelha.tampar();
 
-        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor+" tampada: "+canetaAzul.tampada);
+        System.out.println("Caneta Azul criada! Cor: "+canetaAzul.cor);
 
-        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor+" tampada: "+canetaVermelha.tampada);
+        System.out.println("Caneta Vermelha criada! Cor: "+canetaVermelha.cor);
 
     }
 }

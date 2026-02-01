@@ -5,7 +5,7 @@ public class MainMetodoParametro {
 
         Caneta canetaAmarela = new Caneta();
         canetaAmarela.cor =  "Azul";
-        canetaAmarela.tampada = false;
+        //canetaAmarela.tampada = false;
         canetaAmarela.ponta = 0.5;
         canetaAmarela.carga = 100;
         canetaAmarela.marca = "Bic";
@@ -15,11 +15,15 @@ public class MainMetodoParametro {
         canetaVermelha.ponta = 0.1;
         canetaVermelha.carga = 50;
         canetaVermelha.marca = "Faber Castell";
-        canetaVermelha.tampada = false;
+       // canetaVermelha.tampada = false;
 
         canetaAmarela.escrever("Olá da caneta amarela!");
         System.out.println();
         canetaVermelha.escrever("Olá da caneta vermelha!");
+        System.out.println();
+
+        canetaAmarela.status();
+        canetaVermelha.status();
 
     }
 }
