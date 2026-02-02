@@ -1,4 +1,4 @@
-package tech.buildrun;
+package tech.buildrun.caneta;
 
 public class Caneta {
     protected String cor;

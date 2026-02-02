@@ -1,4 +1,4 @@
-package tech.buildrun;
+package tech.buildrun.caneta;
 
 public class MainMetodoParametro {
     public static void main(String[] args) {
