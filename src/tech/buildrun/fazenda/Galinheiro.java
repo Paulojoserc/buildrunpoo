@@ -59,7 +59,7 @@ public class Galinheiro {
         System.out.println("Nome: " + this.nome);
         System.out.println("Quantidade de galinhas: " + this.qtdGalinhas);
         System.out.println("Quantidade de Ovos por galinha: " + this.ovosPorDiaPorGalinha);
-        System.out.println("Data e hora da criacao: " + this.dataHoraCriacao);
+        System.out.println("Data e hora da criação: " + this.dataHoraCriacao);
         System.out.println("Produção diária de ovos: " + this.calcularProducaoDiaria() + "ovos");
         System.out.println("Produção mensal de ovos: " + this.calcularProducaoMensal() + "ovos");
         System.out.println("======================================");
