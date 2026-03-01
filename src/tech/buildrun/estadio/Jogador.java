@@ -7,4 +7,5 @@ public class Jogador {
     public void treinador(){
         System.out.println("Treinando ");
     }
+
 }
