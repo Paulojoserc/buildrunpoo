@@ -4,6 +4,12 @@ public class JogadorFutebolAmericano extends Jogador {
     private String listaJogadas;
     private int jardasConquistadas;
 
+    public JogadorFutebolAmericano(String nome, int numero, String listaJogadas, int jardasConquistadas) {
+        super(nome, numero);
+        this.listaJogadas = listaJogadas;
+        this.jardasConquistadas = jardasConquistadas;
+    }
+
     public void fazerTouchDown() {
         System.out.println("Fazendo TouchDown");
     }
@@ -12,8 +18,19 @@ public class JogadorFutebolAmericano extends Jogador {
         System.out.println("Jogada bloqueando");
     }
 
+
     public void correrJardas(int jardas) {
 
         this.jardasConquistadas += jardas;
+
+    }
+    @Override
+    public String toString() {
+        return "JogadorFutebolAmericano{" +
+                "listaJogadas='" + listaJogadas + '\'' +
+                ", jardasConquistadas=" + jardasConquistadas +
+                ", nome='" + nome + '\'' +
+                ", numero=" + numero +
+                '}';
     }
 }

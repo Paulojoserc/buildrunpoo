@@ -1,19 +1,31 @@
 package tech.buildrun.estadio;
 
 public class JogadorFutebol extends Jogador {
-    private  String peDominante;
+    private String peDominante;
     private int totalGols;
 
-    public JogadorFutebol(String peDominante, int totalGols) {
+    public JogadorFutebol(String nome, int numero, String peDominante, int totalGols) {
+        super(nome, numero);
         this.peDominante = peDominante;
         this.totalGols = totalGols;
     }
 
-    public void driblar(){
+    public void driblar() {
         System.out.println("Driblando ");
-    };
-    public void fazerGol(){
+    }
+
+
+    public void fazerGol() {
         this.totalGols++;
     }
 
+    @Override
+    public String toString() {
+        return "JogadorFutebol{" +
+                "peDominante='" + peDominante + '\'' +
+                ", totalGols=" + totalGols +
+                ", nome='" + nome + '\'' +
+                ", numero=" + numero +
+                '}';
+    }
 }
