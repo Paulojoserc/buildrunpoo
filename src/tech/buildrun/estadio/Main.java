@@ -37,5 +37,6 @@ public class Main {
         michaelJordan.arremessar();
         michaelJordan.fazerEnterrada();
         System.out.println(michaelJordan);
+
     }
 }
